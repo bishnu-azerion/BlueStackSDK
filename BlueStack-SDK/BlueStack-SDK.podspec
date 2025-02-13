@@ -24,8 +24,8 @@ Pod::Spec.new do |spec|
   spec.platform = :ios
   spec.swift_version = "5"
   spec.ios.deployment_target  = '12.2'
-  spec.resources = 'BlueStack-SDK/BlueStack-SDK.xcframework/ios-arm64/*/*.{bundle}'
-  # spec.resources = 'BlueStack-SDK.xcframework/ios-arm64/*/*.{bundle}'
+  spec.resources = 'BlueStack-SDK/BlueStackSDK.xcframework/ios-arm64/*/*.{bundle}'
+  # spec.resources = 'BlueStackSDK.xcframework/ios-arm64/*/*.{bundle}'
 
   spec.frameworks = 'CoreGraphics', 'QuartzCore', 'SystemConfiguration', 'MediaPlayer', 'CoreMotion', 'EventKitUI', 'EventKit', 'AdSupport', 'StoreKit', 'CoreLocation', 'Accelerate', 'CoreTelephony', 'MessageUI'
 
@@ -40,8 +40,8 @@ Pod::Spec.new do |spec|
   ###################################
 
   spec.subspec 'Core' do |mng|
-    mng.vendored_frameworks = 'BlueStack-SDK/BlueStack-SDK.xcframework'
-    # mng.vendored_frameworks = 'BlueStack-SDK.xcframework'
+    mng.vendored_frameworks = 'BlueStack-SDK/BlueStackSDK.xcframework'
+    # mng.vendored_frameworks = 'BlueStackSDK.xcframework'
   end
 
   # spec.subspec 'Google-Mobile-Ads-SDK' do |gma|
