@@ -18,13 +18,13 @@ Pod::Spec.new do |spec|
                             "Azerion" => "https://www.azerion.com/contact/"
                           }
 
-  # spec.source           = { :git => "https://github.com/azerion/BlueStackSDK.git", :tag => "#{spec.version}" }
-  spec.source = { :path => '.' }
+  spec.source           = { :git => "https://github.com/bishnu-azerion/BlueStackSDK.git", :tag => "#{spec.version}" }
+  # spec.source = { :path => '.' }
 
   spec.platform = :ios
   spec.swift_version = "5"
   spec.ios.deployment_target  = '12.2'
-  spec.resources = 'BlueStackSDK.xcframework/ios-arm64/*/*.{bundle}'
+  spec.resources = 'BlueStack-SDK/BlueStackSDK.xcframework/ios-arm64/*/*.{bundle}'
 
   spec.frameworks = 'CoreGraphics', 'QuartzCore', 'SystemConfiguration', 'MediaPlayer', 'CoreMotion', 'EventKitUI', 'EventKit', 'AdSupport', 'StoreKit', 'CoreLocation', 'Accelerate', 'CoreTelephony', 'MessageUI'
 
@@ -39,7 +39,7 @@ Pod::Spec.new do |spec|
   ###################################
 
   spec.subspec 'Core' do |mng|
-    mng.vendored_frameworks = 'BlueStackSDK.xcframework'
+    mng.vendored_frameworks = 'BlueStack-SDK/BlueStackSDK.xcframework'
   end
 
   spec.subspec 'Google-Mobile-Ads-SDK' do |gma|

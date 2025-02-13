@@ -19,11 +19,12 @@ Pod::Spec.new do |spec|
                             }
   
     # spec.source           = { :git => "https://github.com/azerion/BlueStackSDK.git", :tag => "BlueStackGMAAdapter-v#{spec.version}" }
-    spec.source = { :path => '.' }
+    spec.source           = { :git => "https://github.com/bishnu-azerion/BlueStackSDK.git", :tag => "BlueStackGMAAdapter-v#{spec.version}" }
+    # spec.source = { :path => '.' }
     spec.platform = :ios
     spec.swift_version = "5"
     spec.ios.deployment_target  = '12.2'
-    spec.vendored_frameworks = 'BlueStackGMAAdapter.xcframework'
+    spec.vendored_frameworks = 'primary-mediations/BlueStackGMAAdapter/BlueStackGMAAdapter.xcframework'
     
     spec.dependency 'BlueStack-SDK/Core', '>= 4.4.9'
     spec.dependency 'Google-Mobile-Ads-SDK','11.2.0'
