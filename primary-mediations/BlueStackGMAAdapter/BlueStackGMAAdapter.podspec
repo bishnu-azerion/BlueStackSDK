@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   
     spec.name             = "BlueStackGMAAdapter"
-    spec.version          = "4.4.9.1"
+    spec.version          = "4.4.9.1-preview.1"
     spec.static_framework = true
     spec.summary          = "Google Mobile Ads adapter used for mediation with the BlueStack SDK"
     spec.description      = <<-DESC
