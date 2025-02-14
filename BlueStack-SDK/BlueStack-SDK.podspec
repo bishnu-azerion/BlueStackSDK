@@ -46,7 +46,8 @@ Pod::Spec.new do |spec|
 
   spec.subspec 'Google-Mobile-Ads-SDK' do |gma|
     gma.dependency 'BlueStack-SDK/Core'
-    gma.dependency 'BlueStackGMAAdapter', '>= 4.4.9.1', "~> #{spec.version}.0"
+    # gma.dependency 'BlueStackGMAAdapter', '>= 4.4.9.1', "~> #{spec.version}.0"
+    gma.dependency 'BlueStackGMAAdapter'
   end
 
   # spec.subspec 'Smart-Display-SDK' do |sas|
