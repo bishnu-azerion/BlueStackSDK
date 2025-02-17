@@ -8,7 +8,7 @@ let package = Package(
         .library(name: "BlueStackGMAAdapter", targets: ["BlueStackGMAAdapterTarget"])
     ],
     dependencies: [
-        .package(url: "https://github.com/bishnu-azerion/BlueStackSDK", from: "4.4.9")
+        .package(url: "https://github.com/bishnu-azerion/BlueStackSDK/BlueStack-SDK", from: "4.4.9")
         // .package(name: "BlueStack-SDK", path: "../../BlueStack-SDK"),
         .package(url: "https://github.com/googleads/swift-package-manager-google-mobile-ads", exact: "11.2.0")
     ],
